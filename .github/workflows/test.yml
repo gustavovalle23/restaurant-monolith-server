@@ -22,5 +22,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Run application
+        run: npx ts-node src/index.ts
+
       - name: Run Acceptance Tests
         run: npm test
