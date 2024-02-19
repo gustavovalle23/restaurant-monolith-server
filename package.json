@@ -8,7 +8,8 @@
     "redis": "^4.6.10"
   },
   "scripts": {
-    "test": "./node_modules/.bin/cucumber-js -p default"
+    "test": "./node_modules/.bin/cucumber-js -p default",
+    "start": "npx ts-node src/index.ts"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^10.3.1",
