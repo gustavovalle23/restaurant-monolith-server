@@ -19,7 +19,7 @@ export const createUserRouter = (userService: UserService) => {
 
     } catch (error) {
       if (error instanceof Error) {
-        ctx.throw(500, error.message);
+        ctx.throw(400, error.message);
       }
     }
   });
@@ -34,7 +34,7 @@ export const createUserRouter = (userService: UserService) => {
       ctx.body = updatedUser;
     } catch (error) {
       if (error instanceof Error) {
-        ctx.throw(500, error.message);
+        ctx.throw(400, error.message);
       }
     }
   });
@@ -45,7 +45,7 @@ export const createUserRouter = (userService: UserService) => {
       ctx.body = users;
     } catch (error) {
       if (error instanceof Error) {
-        ctx.throw(500, error.message);
+        ctx.throw(400, error.message);
       }
     }
   });
@@ -63,7 +63,7 @@ export const createUserRouter = (userService: UserService) => {
       ctx.body = user;
     } catch (error) {
       if (error instanceof Error) {
-        ctx.throw(500, error.message);
+        ctx.throw(400, error.message);
       }
     }
   });

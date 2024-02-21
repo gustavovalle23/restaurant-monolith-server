@@ -5,7 +5,8 @@
     "koa-router": "^11.0.2",
     "pg": "^8.11.3",
     "pg-promise": "^11.5.4",
-    "redis": "^4.6.10"
+    "redis": "^4.6.10",
+    "sqlite3": "^5.1.7"
   },
   "scripts": {
     "test": "./node_modules/.bin/cucumber-js -p default",
